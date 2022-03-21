@@ -1,0 +1,23 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "prettier",
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+      "sourceType": "module",   // Allows for the use of imports
+      "ecmaVersion": 2020       // Allows for the parsing of modern ECMAScript features
+  },
+
+  "rules": {
+      "no-console": "warn"
+  },
+  "env": {
+    "browser": true,
+    "es2017": true,
+    "node": true
+  }
+}
