@@ -1,13 +1,21 @@
 {
   "name": "svelte-grid-ts",
-  "author": "Eugene Jeon",
   "version": "1.0.0",
   "description": "Helper package for svelte-grid",
-  "keywords": [
-    "svelte-grid"
-  ],
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugenejeonme/svelte-grid-ts.git"
+  },
+  "homepage": "https://github.com/eugenejeonme/svelte-grid-ts",
+  "bugs": "https://github.com/eugenejeonme/svelte-grid-ts/issues",
+  "keywords": [
+    "svelte-grid",
+    "typescript",
+    "svelte"
+  ],
+  "author": "Eugene Jeon",
   "license": "MIT",
   "scripts": {
     "test": "jest",
