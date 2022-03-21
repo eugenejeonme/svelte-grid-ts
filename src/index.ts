@@ -1,2 +1,2 @@
-export { Grid, gridHelp } from './base.js';
+export { Grid, gridHelp } from './base';
 export { getGridItems, GridItemOption } from './lib';

@@ -1,4 +1,4 @@
-import { GridItemSize } from './item-size';
+import type { GridItemSize } from './item-size';
 
 export class GridItemHelper {
   col: number;
