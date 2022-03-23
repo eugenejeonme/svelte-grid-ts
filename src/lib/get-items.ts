@@ -3,12 +3,12 @@ import { GridItemOption } from './item-option';
 import { GridItemSize } from './item-size';
 
 export function getGridItems<T extends { id: string }>({
-  groups,
+  items,
   cols,
   size = { w: 1, h: 1 },
   options = new GridItemOption()
 }: {
-  groups: Array<T>;
+  items: Array<T>;
   cols: Array<{
     width: number;
     cols: number;
@@ -29,7 +29,7 @@ export function getGridItems<T extends { id: string }>({
     {}
   );
 
-  const items = groups.map((e, index) => {
+  const newItems = items.map((e, index) => {
     const indexHelper = Object.fromEntries(
       Object.entries(colsHelper).map(([key, helper]) => [
         key,
@@ -49,5 +49,5 @@ export function getGridItems<T extends { id: string }>({
     };
   });
 
-  return { items, cols: cols.map((e) => [e.width, e.cols]) };
+  return { items: newItems, cols: cols.map((e) => [e.width, e.cols]) };
 }

@@ -1,15 +1,13 @@
 import { getGridItems } from './get-items';
 
 describe('getGridItems', () => {
-  const groups = [...Array(13).keys()].map((e) => {
-    return {
-      id: e.toString(),
-      title: `${e} title`
-    };
-  });
-
   var { cols, items } = getGridItems({
-    groups: groups,
+    items: [...Array(13).keys()].map((e) => {
+      return {
+        id: e.toString(),
+        title: `${e} title`
+      };
+    }),
     cols: [
       {
         width: 2048,
