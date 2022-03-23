@@ -1,6 +1,6 @@
 {
   "name": "svelte-grid-ts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Helper package for svelte-grid",
   "main": "dist/src/index.js",
   "module": "dist/src/index.mjs",
