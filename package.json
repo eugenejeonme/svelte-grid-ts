@@ -1,6 +1,6 @@
 {
   "name": "svelte-grid-ts",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "description": "Helper package for svelte-grid",
   "main": "dist/src/index.js",
   "module": "dist/src/index.mjs",
@@ -8,7 +8,7 @@
   "svelte": "dist/src/index.mjs",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eugenejpnpm eonme/svelte-grid-ts.git"
+    "url": "git+https://github.com/eugenejeonme/svelte-grid-ts.git"
   },
   "homepage": "https://github.com/eugenejeonme/svelte-grid-ts",
   "bugs": "https://github.com/eugenejeonme/svelte-grid-ts/issues",
