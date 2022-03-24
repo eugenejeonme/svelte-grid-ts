@@ -2,7 +2,9 @@ import { GridItemHelper } from './item-helper';
 import { GridItemOption } from './item-option';
 import { GridItemSize } from './item-size';
 
-export function getGridItems<T extends { id: string }>({
+export function getGridItems<
+  T extends { id: string; size?: { w: number; h: number } }
+>({
   items,
   cols,
   size = { w: 1, h: 1 },
@@ -36,7 +38,7 @@ export function getGridItems<T extends { id: string }>({
         {
           x: helper.genX(index),
           y: helper.genY(index),
-          ...itemSize,
+          ...(e.size ?? itemSize),
           ...options
         }
       ])
