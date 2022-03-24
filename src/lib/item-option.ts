@@ -15,12 +15,12 @@ export class GridItemOption {
 
   constructor(
     options: {
-      fixed: boolean;
-      resizable: boolean;
-      draggable: boolean;
+      fixed?: boolean;
+      resizable?: boolean;
+      draggable?: boolean;
       customDragger?: boolean;
       customResizer?: boolean;
-      min: {
+      min?: {
         w: number;
         h: number;
       };
@@ -35,12 +35,12 @@ export class GridItemOption {
       min: { w: 1, h: 1 }
     }
   ) {
-    this.fixed = options.fixed;
-    this.resizable = options.resizable;
-    this.draggable = options.draggable;
+    this.fixed = options.fixed ?? true;
+    this.resizable = options.resizable ?? false;
+    this.draggable = options.draggable ?? false;
     this.customDragger = options.customDragger;
     this.customResizer = options.customResizer;
-    this.min = options.min;
+    this.min = options.min ?? { w: 1, h: 1 };
     this.max = options.max;
   }
 }
